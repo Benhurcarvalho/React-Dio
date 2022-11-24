@@ -10,6 +10,7 @@ function App() {
     <div>
       <h1>
         Hello Word
+        {/* <Button title='Entrar'/> */}
       </h1>
       <BrowserRouter>
         <Routes>
@@ -23,8 +24,6 @@ function App() {
 
 export default App;
 
-/* <Button
-  title='Entrar'
-/>
+/* 
 <Button title='Ficar'/>
 <Button title='Sair'/> */

@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
+import Button from '../../Components/Button/Button';
 
 export class Home extends Component {
 
@@ -7,7 +8,7 @@ export class Home extends Component {
     return (
       <div>
         <Link to='/login'>
-        <button>Fazer Login</button>
+        <Button title='Fazer Login'/>
         </Link>
       </div>
     )
