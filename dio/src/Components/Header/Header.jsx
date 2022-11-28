@@ -3,12 +3,12 @@ import Button from '../Button/Button';
 import {
     BuscarInputContainer,
     Container,
-    Column,
+    // Column,
     Input, 
     Menu,
     MenuRight,
     Row,
-    UserPicture,
+    // UserPicture,
     Wrapper
 } from './Styles';
 

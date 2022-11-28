@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #1e192c;
+        background-color: #1f192d;
         color: #fff;
     }
 `

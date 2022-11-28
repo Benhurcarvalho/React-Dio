@@ -1,18 +1,35 @@
-import { Component } from 'react'
 // import { Link } from 'react-router-dom';
-// import Button from '../../Components/Button/Button';
+import Button from '../../Components/Button/Button';
+import Header from '../../Components/Header/Header';
+import { Container, TextContent, Title, TitleHightLight } from './styles';
 
-export class Home extends Component {
+const Home = () => {
 
-  render() {
+    const imgStyle = {
+      height: '500px'
+    };
     return (
       <div>
-        {/* <Link to='/login'>
-        <Button title='Fazer Login'/>
-        </Link> */}
+        <Header />
+        <Container>
+          <div>
+              <Title>
+                <TitleHightLight>
+                  Implemente <br />
+                </TitleHightLight>
+                  o seu futuro global agora!
+              </Title>
+              <TextContent>
+                Conquiste o seu espaço no mercado de tecnologia com o Inter.
+              </TextContent>
+              <Button title='Começar agora' variant='secondary' onClick={() => null } />
+          </div>
+          <div>
+              <img style={ imgStyle } src="https://hermes.digitalinnovation.one/files/assets/e41313e0-53f7-4306-8791-09ca800fb469.png" alt="imagem principal" />
+          </div>
+        </Container>
       </div>
     )
   }
-}
 
 export default Home;
