@@ -4,20 +4,21 @@ export const InputContainer = styled.div`
     width: 100%;
     max-width: 275%;
     height: 30px;
-    border-bottom: 1pc solid #3b3450;
+    border-bottom: 1pc solid #1f192d;
 
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 `
 
-export const iconConainer = styled.div`
+export const IconContainer = styled.div`
     margin-right: 10px;
 `
 
 export const InputText = styled.input`
     background-color: transparent;
     color: #fff;
+    width: 100%;
     border: 0;
     height: 30px;
 `

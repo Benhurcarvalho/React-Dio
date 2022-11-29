@@ -1,10 +1,10 @@
 import React from 'react';
-import { IconConainer,InputContainer, InputText } from './styles';
+import { IconContainer,InputContainer, InputText } from './styles';
 
 const Input = ( {leftIcon, name, ...rest}) => {
     return (
       <InputContainer>
-            {leftIcon ? (<IconConainer>{ leftIcon }</IconConainer>) : null }
+            {leftIcon ? (<IconContainer>{ leftIcon }</IconContainer>) : null }
             <InputText { ...rest } />
       </InputContainer>
     )
