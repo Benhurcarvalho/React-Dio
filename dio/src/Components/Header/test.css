@@ -1,3 +1,38 @@
 /* * {
-    height: ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-bottom: ;
+    
+
+    width: 180px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+
+    /* &::after  */
+
+    /* content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: ${({percentual}) => percentual };
+    height: 6px;
+    border-radius: 50%;
+    background-color: #23dd7a; */
+    
+
+
+    /* font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff; */
+
+/* . {
+    color: rgba(0, 0, 0, 0.226)  ;
+    padding: ;
 } */
