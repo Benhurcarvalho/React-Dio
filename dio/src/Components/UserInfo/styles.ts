@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IUserInfoStyle } from "./types";
 
 export const Container = styled.div`
     display: flex;
@@ -29,7 +30,7 @@ export const NameText = styled.img`
 
 `
 
-export const Progress = styled.div`
+export const Progress = styled.div<IUserInfoStyle>`
     width: 180px;
     height: 6px;
     border-radius: 3px;

@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
+import {Button} from '../Button/Button';
+import { IHeader } from './types';
 import {
     BuscarInputContainer,
     Container,
@@ -12,7 +13,7 @@ import {
     Wrapper
 } from './Styles';
 
-const Header = ({autenticado}) => {
+const Header = ({autenticado}: IHeader) => {
 
     const imgStyle = {
         height: '32px'
