@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
+import { api } from '../../services/api';
+
 import Button from '../../Components/Button/Button';
 import Header from '../../Components/Header/Header';
 import { Input } from '../../Components/Input/Input';
@@ -34,11 +36,19 @@ const Login = () => {
 
   console.log(isValid, errors);
 
-  const onSubmit = data => console.log(data);
-
-  const handleClickSignIn = () => {
-    navigate('/feed')
-  }
+  const onSubmit = async FormData => {
+    try{
+      const { data } = await api.get(`users?email=${FormData.email}&senha=${FormData.password}`)
+      if(data.length === 1) {
+        navigate('/feed')
+      } else {
+        alert('Email ou senha inválido')
+      }
+      console.log('retorno da api', data)
+    }catch {
+      alert('Ops, algo deu errado. Tente novamente')
+    }
+  };
 
     return (
       <div>
